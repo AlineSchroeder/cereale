@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cereale - Site Oficial
 
 Este repositório apresenta o site oficial da **Cereale**, uma empresa especializada em produtos naturais.
@@ -18,4 +17,3 @@ Este projeto foi desenvolvido sob demanda para a empresa **Cereale**, utilizando
 =======
 # cereale
 Site oficial da Cereale, desenvolvido com React e Vite. Totalmente responsivo, com design moderno, efeito parallax, mapa interativo e estrutura modular para fácil manutenção.
->>>>>>> c34b96eef1aecdf58f8ed8989ef902308057c04f
