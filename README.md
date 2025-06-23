@@ -14,7 +14,3 @@ O projeto foi desenvolvido com foco em proporcionar uma experiência de navegaç
 ---
 
 Este projeto foi desenvolvido sob demanda para a empresa **Cereale**, utilizando **React** e **Vite**.
-=======
-# cereale
-Site oficial da Cereale, desenvolvido com React e Vite. Totalmente responsivo, com design moderno, efeito parallax, mapa interativo e estrutura modular para fácil manutenção.
->>>>>>> c34b96eef1aecdf58f8ed8989ef902308057c04f
