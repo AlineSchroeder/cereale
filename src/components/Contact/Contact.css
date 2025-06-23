@@ -1,0 +1,279 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #29503A;
+  overflow-x: hidden;
+}
+
+
+/* Aplica box-sizing: border-box para todos os elementos - Essencial para o cálculo de padding/altura */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 0;
+}
+
+/* Cabeçalho */
+.contact-header {
+  background-color: #29503A;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  font-size: 2.2em;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container do Mapa com Fundo Parallax */
+.contact-map-parallax-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* O contêiner para o fundo interativo (definido no JS se for mouse parallax) */
+.contact-map-parallax-wrapper .interactive-background {
+  width: 105%;
+  height: 105%;
+  position: absolute;
+  top: -2.5%;
+  left: -2.5%;
+  z-index: 0;
+}
+
+.contact-map-overlay {
+  width: 100%;
+  height: 600px;
+  max-width: 1200px;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-map-iframe-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-map-iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Rodapé */
+.contact-footer {
+  background-color: #29503A;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 40px 40px 20px;
+  font-family: 'Mooli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Logo alinhada à esquerda */
+.footer-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-logo {
+  max-width: 140px;
+  height: auto;
+}
+
+/* Coluna direita - também à esquerda */
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contact-info {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+/* Link de endereço */
+.address-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: inherit;
+}
+
+.address-link:hover {
+  color: #A3BBA5;
+}
+
+/* Redes sociais */
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.social-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-link-item:hover {
+  color: #A3BBA5;
+}
+
+.contact-icon,
+.social-icon {
+  width: 28px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+/* Copyright centralizado abaixo de tudo */
+.copyright-info {
+  margin-top: 30px;
+  font-size: 1em;
+  opacity: 0.8;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-header {
+    font-size: 1.8em;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .contact-map-parallax-wrapper {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-map-parallax-wrapper .interactive-background {
+      transform: translate(0%, 0%) !important;
+      transition: none !important;
+      width: 100% !important;
+      height: 100% !important;
+      top: 0 !important;
+      left: 0 !important;
+  }
+
+  .contact-map-overlay {
+    height: 450px;
+    max-height: 70vh;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    padding: 25px 20px;
+    max-width: 100%; 
+    margin: 0; 
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: none;
+    width: 100%;
+    min-width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+      margin-bottom: 20px;
+  }
+  
+  .footer-right {
+      align-items: center;
+  }
+
+  /* Centraliza textos e links em mobile */
+  .contact-footer .contact-info,
+  .social-link-item,
+  .contact-info.address-line {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .copyright-info {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .contact-map-parallax-wrapper {
+    padding: 15px;
+  }
+
+  .contact-map-overlay {
+    height: 300px;
+    max-height: 60vh;
+  }
+
+  .contact-footer {
+    padding: 20px 15px;
+    font-size: 0.9em;
+  }
+}

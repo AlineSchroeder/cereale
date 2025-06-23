@@ -1,0 +1,160 @@
+.product-section {
+  display: flex;
+  min-height: 80vh;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+/* Lado Esquerdo (Desktop): Imagem do Produto */
+.product-content-right { 
+  flex: 0 0 40%;
+  background-image: url('../../assets/FundoProduct.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+/* Lado Direito (Desktop): Descrição com Fundo de Folha */
+.product-content-left {
+  flex: 0 0 60%;
+  background-image: url('../../assets/FundoFolha.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.product-description-container {
+  max-width: 700px;
+  padding: 40px 30px;
+  text-align: left;
+}
+
+.product-description-container h2 {
+  font-family: 'Handlee', cursive;
+  color: #FFFFFF;
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.product-description-container h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.product-description-container p,
+.product-description-container ul,
+.product-description-container ul li {
+  font-family: 'Mooli', sans-serif;
+  color: #FFFFFF;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.product-description-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-description-container ul li {
+  margin-bottom: 8px;
+}
+
+.product-description-container strong {
+  font-weight: bold;
+}
+
+.product-final-phrase {
+  margin-top: 25px;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .product-section {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 70vh;
+  }
+
+  /* Lado da Imagem do Produto (à esquerda, "escondida") */
+  .product-content-right {
+    flex: 0 0 80px;
+    min-height: auto;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Lado da Descrição (à direita, ocupando o restante) */
+  .product-content-left {
+    flex: 1;
+    min-height: auto;
+    padding: 40px 20px 40px 15px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .product-description-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .product-description-container h2 {
+    font-size: 1.8em;
+  }
+  .product-description-container p,
+  .product-description-container ul,
+  .product-description-container ul li {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-content-right {
+    flex: 0 0 60px;
+  }
+  .product-content-left {
+    padding: 30px 15px 30px 10px;
+  }
+  .product-description-container h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-content-right {
+    flex: 0 0 40px;
+  }
+  .product-content-left {
+    padding: 20px 10px 20px 8px;
+  }
+  .product-description-container h2 {
+    font-size: 1.4em;
+  }
+  .product-description-container p,
+  .product-description-container ul,
+  .product-description-container ul li {
+    font-size: 0.85em;
+  }
+}

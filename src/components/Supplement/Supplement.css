@@ -1,0 +1,149 @@
+.supplement-section {
+  display: flex;
+  min-height: 80vh;
+  width: 100%;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+/* Lado Esquerdo (Desktop)*/
+.supplement-text-side {
+  flex: 0 0 60%;
+  background-image: url('../../assets/FundoSFolha.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+/* Container do texto */
+.supplement-description-container {
+  max-width: 700px;
+  text-align: left;
+}
+
+.supplement-description-container h2 {
+  font-family: 'Handlee', cursive;
+  color: #29503A;
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.supplement-description-container h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #29503A;
+  margin-top: 10px;
+}
+
+.supplement-description-container p,
+.supplement-description-container ul,
+.supplement-description-container ul li {
+  font-family: 'Mooli', sans-serif;
+  color: #29503A;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.supplement-description-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.supplement-description-container ul li {
+  margin-bottom: 8px;
+}
+
+.supplement-description-container strong {
+  font-weight: bold;
+}
+
+.supplement-final-phrase {
+  margin-top: 25px;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Lado Direito (Desktop) */
+.supplement-image-side {
+  flex: 0 0 40%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .supplement-section {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 70vh;
+  }
+
+  /* Lado Esquerdo (Mobile) */
+  .supplement-text-side {
+    flex: 1;
+    min-height: auto;
+    padding: 30px 15px;
+    order: 1;
+    background-image: url('../../assets/FundoSFolha.svg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .supplement-description-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .supplement-description-container h2 {
+    font-size: 1.8em;
+  }
+  .supplement-description-container p,
+  .supplement-description-container ul,
+  .supplement-description-container ul li {
+    font-size: 0.95em;
+  }
+
+  /* Lado Direito (Mobile) */
+  .supplement-image-side {
+    flex: 0 0 80px;
+    min-height: auto;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .supplement-text-side {
+    padding: 25px 15px;
+  }
+  .supplement-image-side {
+    flex: 0 0 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .supplement-text-side {
+    padding: 20px 10px;
+  }
+  .supplement-image-side {
+    flex: 0 0 40px;
+  }
+}
