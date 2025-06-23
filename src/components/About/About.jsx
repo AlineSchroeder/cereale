@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
 
-import loja1 from '../../assets/About/loja1.svg';
-import loja2 from '../../assets/About/loja2.svg';
-import loja3 from '../../assets/About/loja3.svg';
+import loja1 from '../../assets/About/Loja1.svg';
+import loja2 from '../../assets/About/Loja2.svg';
+import loja3 from '../../assets/About/Loja3.svg';
 
 
 const images = [loja1, loja2, loja3]; 
