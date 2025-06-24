@@ -1,11 +1,30 @@
 import React from 'react';
 import './Supplement.css';
-import FundoSupl from '../../assets/FundoSupl.svg';
+import FundoSuplWebP from '../../assets/FundoSupl.svg';
+import FundoBrancoWebP from '../../assets/FundoBranco.webp';
 
 const Supplement = () => {
+  // Estilo para o lado esquerdo (texto com fundo branco)
+  const textSideBackgroundStyle = {
+    backgroundImage: `url(${FundoBrancoWebP})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  };
+
+  // Estilo para o lado direito (imagem principal do suplemento)
+  const imageSideBackgroundStyle = {
+    backgroundImage: `url(${FundoSuplWebP})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '400px',
+  };
+
   return (
     <section id="supplements" className="supplement-section">
-      <div className="supplement-text-side">
+      <div className="supplement-text-side" style={textSideBackgroundStyle}>
         <div className="supplement-description-container">
           <h2>Suplementos Naturais</h2>
           <p>
@@ -23,7 +42,8 @@ const Supplement = () => {
           <p className="supplement-final-phrase">Aqui, você tem acesso a uma nutrição limpa, responsável e alinhada com um estilo de vida saudável.</p>
         </div>
       </div>
-      <div className="supplement-image-side" style={{ backgroundImage: `url(${FundoSupl})` }}>
+      {/* Aplica o estilo aqui - a tag 'style' já existia, só mudei o valor */}
+      <div className="supplement-image-side" style={imageSideBackgroundStyle}>
       </div>
     </section>
   );

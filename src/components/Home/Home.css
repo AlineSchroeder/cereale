@@ -39,7 +39,7 @@
 
 .main-nav a {
   text-decoration: none;
-  color: #29503A;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.5em;
   transition: color 0.3s ease;
@@ -48,11 +48,11 @@
 }
 
 .main-nav a:hover {
-  color: #ffffff;
+  color: #29503A;
 }
 
 .main-nav .separator {
-  color: #29503A;
+  color: #ffffff;
   font-size: 1.1em;
   margin: 0 5px;
   font-family: 'Handlee', cursive;

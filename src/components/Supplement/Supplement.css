@@ -9,11 +9,6 @@
 /* Lado Esquerdo (Desktop)*/
 .supplement-text-side {
   flex: 0 0 60%;
-  background-image: url('../../assets/FundoBranco.webp');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,9 +75,6 @@
 /* Lado Direito (Desktop) */
 .supplement-image-side {
   flex: 0 0 40%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   min-height: 400px;
 }
 
@@ -100,9 +92,6 @@
     min-height: auto;
     padding: 30px 15px;
     order: 1;
-    background-image: url('../../assets/FundoBranco.webp');
-    background-size: cover;
-    background-position: center center;
   }
 
   .supplement-description-container {
@@ -123,9 +112,6 @@
   .supplement-image-side {
     flex: 0 0 80px;
     min-height: auto;
-    background-size: cover;
-    background-position: right center;
-    background-repeat: no-repeat;
     order: 2;
   }
 }

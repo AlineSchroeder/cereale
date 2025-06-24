@@ -1,12 +1,17 @@
+// src/components/About/About.jsx
+
 import React, { useState, useEffect } from 'react';
 import './About.css';
+
+// Importe a imagem de fundo aqui
+import FundoBrancoWebP from '../../assets/FundoBranco.webp'; // Sua imagem otimizada .webp
 
 import loja1 from '../../assets/About/Loja1.svg';
 import loja2 from '../../assets/About/Loja2.svg';
 import loja3 from '../../assets/About/Loja3.svg';
 
 
-const images = [loja1, loja2, loja3]; 
+const images = [loja1, loja2, loja3];
 
 const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -16,13 +21,23 @@ const About = () => {
       setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % images.length
       );
-    }, 5000); 
+    }, 5000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
 
+  // Define o estilo de fundo dinâmico
+  const backgroundStyle = {
+    backgroundImage: `url(${FundoBrancoWebP})`, // Usa a imagem importada
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed', // Mantém o efeito parallax
+  };
+
   return (
-    <section id="about" className="about-section">
+    // Aplica o estilo inline à seção
+    <section id="about" className="about-section" style={backgroundStyle}>
       <div className="about-content">
         <div className="about-text">
           <h2>Sobre a Cereale Produtos Naturais</h2>

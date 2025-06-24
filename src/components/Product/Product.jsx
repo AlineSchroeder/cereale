@@ -1,16 +1,37 @@
 import React from 'react';
 import './Product.css';
 
+import FundoProductWebP from '../../assets/FundoProduct.svg';
+import FundoVerdeWebP from '../../assets/FundoVerde.webp';     
+
 const Product = () => {
+  // Estilo para o lado direito (imagem do produto)
+  const productRightBackgroundStyle = {
+    backgroundImage: `url(${FundoProductWebP})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    minHeight: '400px',
+  };
+
+  // Estilo para o lado esquerdo (descrição com fundo verde)
+  const productLeftBackgroundStyle = {
+    backgroundImage: `url(${FundoVerdeWebP})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+  };
+
   return (
     <section id="products" className="product-section">
       {/* INVERTIDO: Lado direito agora vem primeiro no HTML para o desktop */}
-      <div className="product-content-right">
+      <div className="product-content-right" style={productRightBackgroundStyle}>
         {/* Este div será o contêiner para o FundoProduct.svg */}
       </div>
 
       {/* INVERTIDO: Lado esquerdo agora vem depois no HTML para o desktop */}
-      <div className="product-content-left">
+      <div className="product-content-left" style={productLeftBackgroundStyle}>
         <div className="product-description-container">
           <h2>Nossa Seleção de Produtos Naturais</h2>
           <p>

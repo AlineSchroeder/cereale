@@ -9,7 +9,6 @@ const Home = () => {
   const homeRef = React.useRef(null);
 
   useEffect(() => {
-    // Função para atualizar o tamanho do contêiner
     const updateContainerSize = () => {
       if (homeRef.current) {
         setContainerSize({
@@ -22,7 +21,6 @@ const Home = () => {
     updateContainerSize();
     window.addEventListener('resize', updateContainerSize);
 
-    // Função para capturar a posição do mouse
     const handleMouseMove = (event) => {
       if (homeRef.current) {
         const { left, top } = homeRef.current.getBoundingClientRect();
@@ -33,13 +31,11 @@ const Home = () => {
       }
     };
 
-    // Adiciona o event listener ao elemento Home, não ao window
     if (homeRef.current) {
       homeRef.current.addEventListener('mousemove', handleMouseMove);
     }
 
     return () => {
-      // Limpa os event listeners quando o componente é desmontado
       window.removeEventListener('resize', updateContainerSize);
       if (homeRef.current) {
         homeRef.current.removeEventListener('mousemove', handleMouseMove);

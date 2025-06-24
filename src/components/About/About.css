@@ -1,11 +1,6 @@
 .about-section {
   padding: 60px 30px;
   width: 100%;
-  background-image: url('../../assets/FundoBranco.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .about-content {
