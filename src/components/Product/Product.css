@@ -15,10 +15,13 @@
   min-height: 400px;
 }
 
+
 /* Lado Direito (Desktop): Descrição com Fundo de Folha */
 .product-content-left {
   flex: 0 0 60%;
-  background-image: url('../../assets/FundoFolha.svg');
+  background-image: url('../../assets/FundoVerde.jpg');
+  background-image: url('../../assets/FundoVerde.webp');
+
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css';
-import FundoFolhas from '../../assets/FundoFolha.svg';
 import LogoCereale from '../../assets/LogoCereale.svg';
 import InstagramIcon from '../../assets/instagram.svg';
 import WhatsAppIcon from '../../assets/whatsapp.svg';
@@ -20,7 +19,7 @@ const Contact = () => {
       </div>
 
       {/* Seção do Mapa com Fundo Parallax */}
-      <div className="contact-map-parallax-wrapper" style={{ backgroundImage: `url(${FundoFolhas})` }}>
+      <div className="contact-map-parallax-wrapper">
         <div className="contact-map-overlay">
           <div className="contact-map-iframe-wrapper">
             <iframe

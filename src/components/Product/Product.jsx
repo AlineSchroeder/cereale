@@ -1,7 +1,5 @@
 import React from 'react';
 import './Product.css';
-import FundoProduct from '../../assets/FundoProduct.svg';
-import FundoFolha from '../../assets/FundoFolha.svg';
 
 const Product = () => {
   return (

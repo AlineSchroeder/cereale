@@ -33,27 +33,21 @@ html, body {
 
 /* Container do Mapa com Fundo Parallax */
 .contact-map-parallax-wrapper {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-
-/* O contêiner para o fundo interativo (definido no JS se for mouse parallax) */
-.contact-map-parallax-wrapper .interactive-background {
-  width: 105%;
-  height: 105%;
-  position: absolute;
-  top: -2.5%;
-  left: -2.5%;
-  z-index: 0;
+    background-image: url('../../assets/FundoVerde.jpg');
+    background-image: url('../../assets/FundoVerde.webp');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .contact-map-overlay {

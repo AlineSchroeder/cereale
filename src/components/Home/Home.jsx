@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import logoCereale from '../../assets/LogoCereale.svg';
-import FundoHome from '../../assets/FundoHome.svg';
+import FundoHome from '../../assets/FundoHome.webp';
 
 const Home = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
