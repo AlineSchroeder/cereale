@@ -33,7 +33,6 @@ html, body {
 
 /* Container do Mapa com Fundo Parallax */
 .contact-map-parallax-wrapper {
-    background-image: url('../../assets/FundoVerde.jpg');
     background-image: url('../../assets/FundoVerde.webp');
     
     background-size: cover;

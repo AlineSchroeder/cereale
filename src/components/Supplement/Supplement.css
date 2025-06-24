@@ -9,7 +9,6 @@
 /* Lado Esquerdo (Desktop)*/
 .supplement-text-side {
   flex: 0 0 60%;
-  background-image: url('../../assets/FundoBranco.jpg'); 
   background-image: url('../../assets/FundoBranco.webp');
   background-size: cover;
   background-position: center center;
