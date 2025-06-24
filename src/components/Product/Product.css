@@ -1,3 +1,11 @@
+.fundo-verde {
+  background-image: url('../../assets/FundoVerde.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .product-section {
   display: flex;
   min-height: 80vh;
@@ -123,6 +131,10 @@
 }
 
 @media (max-width: 768px) {
+  .fundo-verde {
+    background-attachment: scroll !important;
+  }
+  
   .product-content-right {
     flex: 0 0 60px;
   }

@@ -96,6 +96,7 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 40px 20px;
+    background-attachment: scroll !important;
   }
   .about-section h2 {
     font-size: 1.8em;

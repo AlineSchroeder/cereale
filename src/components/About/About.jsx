@@ -1,11 +1,6 @@
-// src/components/About/About.jsx
-
 import React, { useState, useEffect } from 'react';
 import './About.css';
-
-// Importe a imagem de fundo aqui
-import FundoBrancoWebP from '../../assets/FundoBranco.webp'; // Sua imagem otimizada .webp
-
+import FundoBrancoWebP from '../../assets/FundoBranco.webp';
 import loja1 from '../../assets/About/Loja1.svg';
 import loja2 from '../../assets/About/Loja2.svg';
 import loja3 from '../../assets/About/Loja3.svg';
@@ -28,11 +23,11 @@ const About = () => {
 
   // Define o estilo de fundo dinâmico
   const backgroundStyle = {
-    backgroundImage: `url(${FundoBrancoWebP})`, // Usa a imagem importada
+    backgroundImage: `url(${FundoBrancoWebP})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed', // Mantém o efeito parallax
+    backgroundAttachment: 'fixed',
   };
 
   return (

@@ -93,7 +93,8 @@
 @media (max-width: 480px) {
   .home-hero-section {
     padding: 20px 10px;
-    min-height: 50vh; /* Altura mínima ainda menor */
+    min-height: 50vh;
+    background-attachment: scroll !important;
   }
   .main-nav ul {
     flex-direction: column;

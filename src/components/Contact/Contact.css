@@ -33,6 +33,13 @@ html, body {
 
 /* Container do Mapa com Fundo Parallax */
 .contact-map-parallax-wrapper {
+    background-image: url('../../assets/FundoVerde.webp');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +192,21 @@ html, body {
     max-width: 100%;
   }
 
+  .contact-map-parallax-wrapper {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .contact-map-parallax-wrapper .interactive-background {
+      transform: translate(0%, 0%) !important;
+      transition: none !important;
+      width: 100% !important;
+      height: 100% !important;
+      top: 0 !important;
+      left: 0 !important;
+  }
+
   .contact-map-overlay {
     height: 450px;
     max-height: 70vh;
@@ -236,6 +258,7 @@ html, body {
 
   .contact-map-parallax-wrapper {
     padding: 15px;
+    background-attachment: scroll !important;
   }
 
   .contact-map-overlay {
